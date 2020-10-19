@@ -3,28 +3,15 @@ import {db} from './firebase';
 
 import {useCollectionData} from 'react-firebase-hooks/firestore';
 
-// const firebaseconfig = {
-//     apiKey: "AIzaSyCgEz6oKwFGDEGAbrw3cYP6HjweHzoeE2Y",
-//     authDomain: "hoihiepsytesting.firebaseapp.com",
-//     databaseURL: "https://hoihiepsytesting.firebaseio.com",
-//     projectId: "hoihiepsytesting",
-//     storageBucket: "hoihiepsytesting.appspot.com",
-//     messagingSenderId: "822792038177",
-//     appId: "1:822792038177:web:c75a4e5d856f1493280060",
-//     measurementId: "G-M3BTTKKGBE"
-//   }
-  
-// firebase.initializeApp(firebaseconfig)
-// const db = firebase.firestore();
-
 function ContentPanel(quote){
     return(
         
         <div className="content-section">
-            <p>{quote.quote}</p>
-            <p>cre: {quote.cre}</p>
+          <textarea readOnly rows="auto" cols="auto">{quote.quote}</textarea>
+            {/* <p>{quote.quote}</p>
+            <p>cre: {quote.cre}</p> */}
         </div>
-    )
+    );
 }
 
 function ContentSection(){
@@ -56,7 +43,7 @@ function ContentSection(){
           <ContentPanel quote={quote.Quote} cre={input}/>
           ))}
         </div>
-    )}
+    );}
 }
 
 
