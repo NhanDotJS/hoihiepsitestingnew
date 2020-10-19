@@ -52,10 +52,11 @@
   flex-wrap: wrap; */
   overflow-wrap: break-word;
   background: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 10px;
   border: 1px solid #dddddd;
   border-radius: 10px;
   margin-bottom: 20px;
+  height: auto;
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
   width: 80%;
   align-items: center;
@@ -111,4 +112,46 @@ td {
 
 textarea {
   width: 90%;
+}
+
+.input-focus-effect {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.input-focus-effect input {
+  padding: 2rem 1rem 1rem;
+  border: 1px solid transparent;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  transition: border 0.25s linear;
+  background-color: white;
+  outline: none;
+  color: transparent;
+  font-size: 1rem;
+}
+
+.input-focus-effect input:focus {
+  border-color: var(--primary);
+  color: #282c34;
+}
+
+.input-focus-effect input:focus + label {
+  transform: translateY(0);
+  top: 1rem;
+}
+
+.input-focus-effect label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #444444;
+  transition: 0.25s linear;
+  font-size: 0.9rem;
 }

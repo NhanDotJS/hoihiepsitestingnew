@@ -7,9 +7,9 @@ function ContentPanel(quote){
     return(
         
         <div className="content-section">
-          <textarea readOnly rows="auto" cols="auto">{quote.quote}</textarea>
-            {/* <p>{quote.quote}</p>
-            <p>cre: {quote.cre}</p> */}
+          {/* <textarea readOnly rows="auto" cols="auto">{quote.quote}</textarea> */}
+            <p>{quote.quote}</p>
+            <p>cre: {quote.cre}</p>
         </div>
     );
 }
@@ -32,13 +32,18 @@ function ContentSection(){
     return(
         
         <div className="articles-container">
-          <p className="title">Nhập cre vào đây đi bạn ơi:</p>
+          {/* <p className="title">Nhập cre vào đây đi bạn ơi:</p>
           <input
           className="search-bar"
           type="text"
           value={input}
           onChange={updateInput}
-          />
+          /> */}
+          <div class="input-focus-effect">
+            <input type="text" value={input}
+          onChange={updateInput}/>
+            <label>Insert cre here...</label>
+          </div>
           {quote.map((quote) => (
           <ContentPanel quote={quote.Quote} cre={input}/>
           ))}
