@@ -1,4 +1,12 @@
 .App {
+<<<<<<< HEAD
+=======
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.bodycontainer {
+>>>>>>> 84d21ec... leaderboard update
   text-align: center;
 }
 
@@ -36,3 +44,69 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+=======
+
+.content-section {
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  overflow-wrap: break-word;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  width: 80%;
+  align-items: center;
+}
+.article-title {
+  color: #444444;
+  text-decoration: none;
+}
+
+.article-title:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.articles-container {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  max-width: 1000px;
+  width: 50%;
+  /* font-size: calc(10px + 2vmin); */
+}
+
+.search-bar {
+  width: 80%;
+  border: none;
+  padding: 10px;
+  margin-bottom: 3vh;
+  border-radius: 5px;
+}
+
+.title {
+  color: white;
+}
+
+table,
+th,
+td {
+  width: 100%;
+  color: white;
+  /* border: 2px solid white; */
+}
+th,
+td {
+  padding: 10px 10px 10px 10px;
+}
+
+.leftcol {
+  text-align: left;
+}
+>>>>>>> 84d21ec... leaderboard update
