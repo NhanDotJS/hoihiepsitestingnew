@@ -58,8 +58,11 @@
   margin-bottom: 20px;
   height: auto;
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
-  width: 80%;
+  width: 98%;
   align-items: center;
+}
+.content-section h1 {
+  color: orange;
 }
 .article-title {
   color: #444444;
@@ -77,8 +80,8 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: start; */
+  width: 100%;
   max-width: 1000px;
-  width: 50%;
   /* font-size: calc(10px + 2vmin); */
 }
 
@@ -99,11 +102,12 @@ th,
 td {
   width: 100%;
   color: white;
+  font-size: 1.5rem;
   /* border: 2px solid white; */
 }
 th,
 td {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .leftcol {
@@ -119,7 +123,7 @@ textarea {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 50px;
-  width: 60%;
+  width: 80%;
 }
 
 .input-focus-effect input {
@@ -154,4 +158,72 @@ textarea {
   color: #444444;
   transition: 0.25s linear;
   font-size: 0.9rem;
+}
+
+.imagelogo {
+  max-height: 70px;
+  width: auto;
+}
+
+.Navbackground {
+  background-color: #131313 !important;
+}
+
+.dashed-loading {
+  margin-top: 50px;
+  position: relative;
+  height: 50px;
+}
+
+.dashed-loading:after,
+.dashed-loading:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.dashed-loading:before {
+  z-index: 5;
+  border: 3px dashed orange;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-animation: dashed 1s linear infinite;
+  animation: dashed 1s linear infinite;
+}
+
+.dashed-loading:after {
+  z-index: 10;
+  border: 3px solid orange;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-animation: dashed 1s ease infinite;
+  animation: dashed 1s ease infinite;
+}
+
+@keyframes dashed {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.CopyButton:hover {
+  background-color: orange;
+  color: white;
+  /* border: transparent; */
+  border: 1px solid transparent;
+  border-radius: 5px;
+  /* margin: 3px 3px 3px 3px; */
+}
+
+.CopyButton {
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+  /* margin: none; */
+  /* box-shadow: 0px 1px 3px rgb(71, 71, 71); */
 }

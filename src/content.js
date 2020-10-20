@@ -1,15 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {db} from './firebase';
-
+import Loading from './loading';
 import {useCollectionData} from 'react-firebase-hooks/firestore';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 function ContentPanel(quote){
+  const [copyText, setCopyText] = useState(`${quote.quote.Quote}`);
+  useEffect(()=>{
+    setCopyText(`${quote.quote.Quote} cre: ${quote.cre}`)
+  },[quote.cre]);
+  
     return(
         
         <div className="content-section">
           {/* <textarea readOnly rows="auto" cols="auto">{quote.quote}</textarea> */}
-            <p>{quote.quote}</p>
-            <p>cre: {quote.cre}</p>
+          <h1>{quote.quote.Title}</h1>
+          <p>{quote.quote.Des}</p>
+          <h3>{quote.quote.Quote}</h3>
+          <h3>cre: {quote.cre}</h3>
+          <CopyToClipboard text= {copyText} >
+            <button className="CopyButton">Copy to clipboard</button>
+          </CopyToClipboard>
+
         </div>
     );
 }
@@ -20,13 +32,14 @@ function ContentSection(){
         setInput(e.target.value);
   };
   const quotes = db.collection('Quotes')
-  const [quote] =useCollectionData(quotes, {idField:'id'});
+  const [quote] = useCollectionData(quotes, {idField:'id'});
+  // const [quote] = [];
   if (!quote){
     return(
       <div>
-        <p>Loading...</p>
+        <Loading/>
       </div>
-    )
+    );
   }
   else{
     return(
@@ -42,10 +55,10 @@ function ContentSection(){
           <div class="input-focus-effect">
             <input type="text" value={input}
           onChange={updateInput}/>
-            <label>Insert cre here...</label>
+            <label>Nhập cre đúng vào đây đi bạn ơi...</label>
           </div>
           {quote.map((quote) => (
-          <ContentPanel quote={quote.Quote} cre={input}/>
+          <ContentPanel quote={quote} cre={input}/>
           ))}
         </div>
     );}

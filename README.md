@@ -9,4 +9,4 @@
 - [x] Firebase hosting
 - [x] Van Mau
 - [x] Leaderboard
-- [ ] UI/UX
+- [ ] UI/UX - Completing 1/2 - Loading

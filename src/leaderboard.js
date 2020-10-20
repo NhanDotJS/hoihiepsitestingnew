@@ -21,11 +21,13 @@ function Leaderboard(){
             <table>
                 <tr>
                     <th className="leftcol">Name</th>
+                    <th>Rank</th>
                     <th>Point</th>
                 </tr>
                 {names.map((name)=>(
                     <tr>
                         <td className="leftcol">{name.Name}</td>
+                        <td>Rank</td>
                         <td>{name.Score}</td>
                     </tr>
                     )
