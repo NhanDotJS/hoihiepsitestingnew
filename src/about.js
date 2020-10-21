@@ -5,7 +5,7 @@ function About(){
         <div className="articles-container">
             <div className="content-section" style={{textAlign: "left",}}>
             <h2  className="orangetext" style={{textAlign: "center",}}>Hội Hiệp Sĩ là gì thế?</h2>
-        <p><a target="_blank" href="https://www.facebook.com/groups/HoiHiepSi">Hội Hiệp Sĩ</a>  là một group trên facebook được tạo ra vào ngày 2/4/2020 bởi các thành viên của group <a target="_blank" href="https://www.facebook.com/groups/ngontu/">Ngôn từ đâu mà có?</a> với một mục đích duy nhất:</p>
+        <p><a target="_blank" href="https://www.facebook.com/groups/HoiHiepSi" rel="noopener noreferrer">Hội Hiệp Sĩ</a>  là một group trên facebook được tạo ra vào ngày 2/4/2020 bởi các thành viên của group <a target="_blank" href="https://www.facebook.com/groups/ngontu/" rel="noopener noreferrer">Ngôn từ đâu mà có?</a> với một mục đích duy nhất:</p>
         <p>Bảo vệ content của các tác giả trong cộng đồng Chơi Chữ khỏi sự sử dụng không xin phép, ăn cắp trắng trợn, làm ngơ khi được nhắc nhở của những kẻ vô ý thức. 
             Nói hoa mỹ là vậy chứ thật ra là đi bóc phốt, vạch trần, chọc tiết, trêu đùa mấy đứa đạo tặc hay ăn cắp chất xám.</p>
         

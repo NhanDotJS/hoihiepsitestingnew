@@ -4,6 +4,8 @@ import './App.css';
 import NavbarPage from './nav';
 import Leaderboard from './leaderboard';
 import About from './about';
+import Footer from './footer'
+
 // import AnhMau from './anhmau';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -22,8 +24,10 @@ function App() {
         {/* <Route path="/anhmau" component={AnhMau}/> */}
       </Switch>
       
-
+      
     </div>
+    <Footer/>
+    
     </div>
     </Router>
   );

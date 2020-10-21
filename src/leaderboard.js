@@ -47,7 +47,7 @@ function Leaderboard(){
                 
                 )}
             </table>
-            <h5><a href="http://bit.ly/HHS-TopKnight" target="_blank">Truy cập danh sách đầy đủ</a></h5>
+            <h5><a href="http://bit.ly/HHS-TopKnight" target="_blank" rel="noopener noreferrer">Truy cập danh sách đầy đủ</a></h5>
             </div>
             <div className="leaderboardtable">
               <h2>Top Hoa Tiêu</h2>
@@ -66,7 +66,7 @@ function Leaderboard(){
                 
                 )}
             </table>
-            <h5><a href="http://bit.ly/HHS-TopKnight" target="_blank">Truy cập danh sách đầy đủ</a></h5>
+            <h5><a href="http://bit.ly/HHS-TopKnight" target="_blank" rel="noopener noreferrer">Truy cập danh sách đầy đủ</a></h5>
             </div>
             
         </div>
