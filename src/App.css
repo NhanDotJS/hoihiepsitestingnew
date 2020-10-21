@@ -54,21 +54,6 @@ a:hover {
   }
 }
 
-.content-section {
-  /* display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; */
-  overflow-wrap: break-word;
-  background: #ffffff;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #dddddd;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  height: auto;
-  box-shadow: 0px 5px 20px rgb(71, 71, 71);
-  width: 98%;
-  align-items: center;
-}
 .content-section h1 {
   color: orange;
 }
@@ -135,7 +120,7 @@ td {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 98%;
   border-radius: 10px;
   background-color: #303030;
   box-shadow: 0px 0px 20px 1px #4e4e4e;
@@ -144,7 +129,29 @@ td {
   margin: 20px 0px 20px 0px;
 }
 
+.content-section {
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  overflow-wrap: break-word;
+  background-color: #303030;
+  padding: 10px 10px 10px 10px;
+  /* border: 1px solid #dddddd; */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+  height: auto;
+  box-shadow: 0px 0px 20px 1px #4e4e4e;
+  width: 98%;
+  padding: 20px 20px 20px 20px;
+  align-items: center;
+}
+
 .leaderboardtable h2 {
+  color: orange;
+}
+
+.orangetext {
   color: orange;
 }
 
@@ -254,7 +261,7 @@ textarea {
 }
 
 .CopyButton {
-  background-color: white;
+  background-color: #303030;
   color: orange;
   border: 1px solid orange;
   border-radius: 5px;
