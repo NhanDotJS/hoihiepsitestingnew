@@ -4,7 +4,7 @@ import './App.css';
 import NavbarPage from './nav';
 import Leaderboard from './leaderboard';
 import About from './about';
-import AnhMau from './anhmau';
+// import AnhMau from './anhmau';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

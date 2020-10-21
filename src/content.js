@@ -5,6 +5,7 @@ import {useCollectionData} from 'react-firebase-hooks/firestore';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 function ContentPanel(quote){
+
   const [copyText, setCopyText] = useState(`${quote.quote.Quote}`);
   useEffect(()=>{
     setCopyText(`${quote.quote.Quote} cre: ${quote.cre}`)
@@ -25,6 +26,8 @@ function ContentPanel(quote){
         </div>
     );
 }
+
+
 
 function ContentSection(){
   const [input, setInput] = useState("");
