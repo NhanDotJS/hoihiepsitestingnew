@@ -1,5 +1,6 @@
 import React from 'react';
 import {db} from './firebase';
+import Loading from './loading';
 import {useCollectionData} from 'react-firebase-hooks/firestore';
 
 
@@ -12,16 +13,12 @@ function Leaderboard(){
   const [reports] =useCollectionData(reportQueries, {idField:'id'});
   if (!names){
     return(
-      <div>
-        <p>Loading...</p>
-      </div>
+      <Loading/>
     )
   }
   else if(!reports){
     return(
-      <div>
-        <p>Loading...</p>
-      </div>
+      <Loading/>
     )
   }
   else{
