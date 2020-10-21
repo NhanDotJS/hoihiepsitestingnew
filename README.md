@@ -9,4 +9,5 @@
 - [x] Firebase hosting
 - [x] Van Mau
 - [x] Leaderboard
-- [ ] UI/UX - Completing 1/2 - Loading
+- [x] UI/UX
+- [ ] Easter egg?
