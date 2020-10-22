@@ -17,8 +17,8 @@ function ContentPanel(quote){
           {/* <textarea readOnly rows="auto" cols="auto">{quote.quote}</textarea> */}
           <h1>{quote.quote.Title}</h1>
           <p>{quote.quote.Des}</p>
-          <h3>{quote.quote.Quote}</h3>
-          <h3>cre: {quote.cre}</h3>
+          <h5>{quote.quote.Quote}</h5>
+          <h5>cre: {quote.cre}</h5>
           <CopyToClipboard text= {copyText} >
             <button className="CopyButton">Copy to clipboard</button>
           </CopyToClipboard>

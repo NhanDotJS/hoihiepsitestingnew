@@ -9,11 +9,22 @@ import Footer from './footer'
 // import AnhMau from './anhmau';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// 
 function App() {
+  window.onscroll = function () { scrollFunction() };
+  function scrollFunction() {
+    var mybutton = document.getElementById("myBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
+    } else {
+        mybutton.style.display = "none";
+    }
+  }
+
   return (
     <Router>
     <div className="App">
-    <NavbarPage/>
+    <NavbarPage id="top" />
     <div className="bodycontainer">
       
       <Switch>
@@ -27,7 +38,7 @@ function App() {
       
     </div>
     <Footer/>
-    
+    <a href="#top" id="myBtn" title="Go to top" ><i class="fas fa-arrow-up"></i></a>
     </div>
     </Router>
   );
